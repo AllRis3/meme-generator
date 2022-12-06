@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family:  'Arial Narrow Bold', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: aqua;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftSection{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trollimg{
+  width: 55px;
+}
+.memeSection{
+  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.inputSection{
+  display: flex;
+  gap: 2rem;
+ 
+}
+input{
+  border-radius: 5px;
+  border: 1px solid rgb(179, 177, 177);
+  width: 20rem;
+  margin-top: 4rem;
+  font-size: 1rem;
+  padding: 1rem;
+
+}
+button{
+  width: 40rem;
+  padding: 1rem;
+  background-color: #A626D3;
   color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  margin: 2rem 4rem ;
+  cursor: pointer;
+ 
+}
+.meme--image{
+  max-width: 100%;
+  border-radius: 5px;
+  
+
+}
+.meme{
+  position: relative;
+  
+}
+.top--text{
+  position: absolute;
+  width: 100%;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  top: 0;
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+  text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.bottom--text{
+  
+  position: absolute;
+  width: 100%;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+  text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
